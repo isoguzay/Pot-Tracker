@@ -1,0 +1,26 @@
+
+
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
+  <div class="text-center mb-4">
+    <img class="mb-4" src="../../../../assets/img/bootstrap-solid.svg" alt="" width="72" height="72">
+  </div>
+  <div class="text-center mb-4">
+    <h1 class="h3 mb-3 font-weight-normal">Hoşgeldiniz, lütfen giriş yapınız</h1>
+
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" #username="ngModel" [(ngModel)]="model.username" id="username" name="username"
+      class="form-control" placeholder="Kullanıcı Adı" required autofocus>
+    <label for="inputEmail">Kullanıcı Adı</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" #password="ngModel" [(ngModel)]="model.password" id="password" name="password"
+      class="form-control" placeholder="Şifre" required>
+    <label for="inputPassword">Şifre</label>
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş Yap</button>
+  <p class="mt-5 mb-3 text-muted text-center">&copy;isoguzay 2019</p>
+</form>

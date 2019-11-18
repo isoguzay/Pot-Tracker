@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/driver">
+              <span data-feather="home"></span>
+              Şoförlerim<span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product-add-1">
+              <span data-feather="file"></span>
+              Araçlarım
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product-add-2">
+              <span data-feather="shopping-cart"></span>
+              Yükleme Noktaları
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product-add-2">
+              <span data-feather="shopping-cart"></span>
+              Bırakma Noktaları
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product-add-2">
+              <span data-feather="shopping-cart"></span>
+              Faturalar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product-add-2">
+              <span data-feather="shopping-cart"></span>
+              İrsaliyeler
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product-add-2">
+              <span data-feather="shopping-cart"></span>
+              Kullanıcı / Admin İşlemleri
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
