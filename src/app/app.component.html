@@ -1,9 +1,8 @@
 <div *ngIf="isLoggedin()==true">
     <app-nav></app-nav>
-    <app-right-side></app-right-side>
-    <router-outlet></router-outlet>
 </div>
 
 <div *ngIf="isLoggedin()==false">
     <app-login></app-login>
 </div>
+

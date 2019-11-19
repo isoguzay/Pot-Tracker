@@ -1,10 +1,13 @@
-  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pot Tracker 2019</a>
-    <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
-        <a *ngIf="isLoggedin()==true" class="nav-link" (click)="logOut()">
-          Çıkış Yap
-        </a>
-      </li>
-    </ul>
-  </nav>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pot Tracker 2019</a>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a *ngIf="isLoggedin()==true" class="nav-link" (click)="logOut()">
+        Çıkış Yap
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

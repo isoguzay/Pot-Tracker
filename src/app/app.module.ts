@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login/login.component';
@@ -12,6 +11,7 @@ import { RightSideComponent } from './components/menu/right-side/right-side.comp
 import { NavComponent } from './components/menu/nav/nav.component';
 import { DriverComponent } from './components/dashboard/driver/driver.component';
 import { LoginGuard } from './components/login/login/login.guard';
+import { MainModulesComponent } from './components/dashboard/main-modules/main-modules.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { LoginGuard } from './components/login/login/login.guard';
     NavComponent,
     RightSideComponent,
     DriverComponent,
+    MainModulesComponent,
   ],
   imports: [
     BrowserModule,

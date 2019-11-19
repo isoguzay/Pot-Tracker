@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     console.log(this.model.username);
     console.log(this.model.password);
     console.log(this.accountService.isLogged());
-    this.router.navigate(['/driver']);
+    this.router.navigate(['/main-modules']);
   }
 
 }
